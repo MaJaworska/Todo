@@ -27,12 +27,5 @@ class HelloService {
         String welcomeMsg = langRepository.findById(langId).orElse(FALLBACK_LANG).getWelcomeMsg();
         String nameToWelcome = Optional.ofNullable(name).orElse(FALLBACK_NAME);
         return welcomeMsg + " " + nameToWelcome + "!";
-
-/*        if (name != null && !name.isEmpty()) {
-            // return String.format("Hello %s!", name);
-            return welcomeMsg + " " + name + "!";
-        } else {
-            return welcomeMsg + " " + FALLBACK_NAME + "!";
-        }*/
     }
 }

@@ -17,14 +17,6 @@ class LangService {
 
     List<LangDTO> findAll() {
         return langRepository.findAll().stream().map(LangDTO::new).collect(toList());
-
-/*
-        List<LangDTO> list = new ArrayList<>();
-        int size = langRepository.findAll().size();
-        for (int i = 0; i < size; i++) {
-            list.add(new LangDTO(langRepository.findAll().get(i)));
-        }
-        return list;*/
     }
 
 
