@@ -14,7 +14,7 @@ import java.io.IOException;
 
 @WebServlet(name = "Lang", urlPatterns = {"/api/langs"})
 public class LangServlet extends HttpServlet {
-    private final Logger logger = LoggerFactory.getLogger(HelloServlet.class);
+    private final Logger logger = LoggerFactory.getLogger(LangServlet.class);
 
     private LangService service;
     private ObjectMapper mapper;
